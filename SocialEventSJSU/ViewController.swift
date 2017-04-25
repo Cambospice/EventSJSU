@@ -22,8 +22,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         loginButton.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32, height: 50)
         
         loginButton.delegate = self
-        
-    }
+        }
+    
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("Did out of facebook")
@@ -40,7 +40,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
         else if error == nil {
         print("Successfull logged in via facebook")
-        self.performSegue(withIdentifier: "home", sender: self)
+        self.performSegue(withIdentifier: "Tabs", sender: self)
         }
     }
 

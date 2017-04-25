@@ -7,15 +7,46 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
+import CoreGraphics
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate {
 
+    @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.mapView.delegate = self
         // Do any additional setup after loading the view.
     }
+    
+    
 
+    //Map Annotation in progress
+   /* override func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        if (annotation is MKUserLocation) {
+            return nil
+        }
+        
+        if (annotation.isKindOfClass(CustomAnnotation)) {
+            let customAnnotation = annotation as? CustomAnnotation
+            mapView.translatesAutoresizingMaskIntoConstraints = false
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "CustomAnnotation") as MKAnnotationView!
+            
+            if (annotationView == nil) {
+                annotationView = customAnnotation?.annotationView()
+            } else {
+                annotationView!.annotation = annotation;
+            }
+            
+            self.addBounceAnimationToView(annotationView)
+            return annotationView
+        } else {
+            return nil
+        }
+    }*/
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
