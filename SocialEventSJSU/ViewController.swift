@@ -7,19 +7,42 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
+import FBSDKLoginKit
+class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+    
+    
+    @IBOutlet weak var welcomeMessage: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let loginButton = FBSDKLoginButton()
+        view.addSubview(loginButton)
+        loginButton.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32, height: 50)
+        
+        loginButton.delegate = self
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        print("Did out of facebook")
     }
-
+   
+ 
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        if error != nil {
+            print(error)
+            return
+        } else if FBSDKAccessToken.current() == nil {
+            welcomeMessage.text = "Authentication was canceled"
+            print("User click cancel")
+        }
+        else if error == nil {
+        print("Successfull logged in via facebook")
+        self.performSegue(withIdentifier: "home", sender: self)
+        }
+    }
 
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8364A9901EAE104900050B76 /* Pods_SocialEventSJSU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0D1EE528921BB32303F2A9 /* Pods_SocialEventSJSU.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		83AD7CED1EAE076500FDA83C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD7CEC1EAE076500FDA83C /* AppDelegate.swift */; };
 		83AD7CEF1EAE076500FDA83C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD7CEE1EAE076500FDA83C /* ViewController.swift */; };
 		83AD7CF21EAE076500FDA83C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AD7CF01EAE076500FDA83C /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		720B45C0481F0F688912B414 /* Pods-SocialEventSJSU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialEventSJSU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialEventSJSU/Pods-SocialEventSJSU.debug.xcconfig"; sourceTree = "<group>"; };
+		776CB2FEB520DAEDC761786F /* Pods-SocialEventSJSU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialEventSJSU.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialEventSJSU/Pods-SocialEventSJSU.release.xcconfig"; sourceTree = "<group>"; };
+		8364A9911EAE210A00050B76 /* SocialEventSJSU.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialEventSJSU.entitlements; sourceTree = "<group>"; };
 		83AD7CE91EAE076500FDA83C /* SocialEventSJSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialEventSJSU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AD7CEC1EAE076500FDA83C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83AD7CEE1EAE076500FDA83C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		83AD7CF31EAE076500FDA83C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83AD7CF61EAE076500FDA83C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83AD7CF81EAE076500FDA83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0D1EE528921BB32303F2A9 /* Pods_SocialEventSJSU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialEventSJSU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8364A9901EAE104900050B76 /* Pods_SocialEventSJSU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0759FB6C0C4AC68A7AB36AED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D1EE528921BB32303F2A9 /* Pods_SocialEventSJSU.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83AD7CE01EAE076500FDA83C = {
 			isa = PBXGroup;
 			children = (
 				83AD7CEB1EAE076500FDA83C /* SocialEventSJSU */,
 				83AD7CEA1EAE076500FDA83C /* Products */,
+				A18C247BAEB3946446FDF7DD /* Pods */,
+				0759FB6C0C4AC68A7AB36AED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +70,7 @@
 		83AD7CEB1EAE076500FDA83C /* SocialEventSJSU */ = {
 			isa = PBXGroup;
 			children = (
+				8364A9911EAE210A00050B76 /* SocialEventSJSU.entitlements */,
 				83AD7CEC1EAE076500FDA83C /* AppDelegate.swift */,
 				83AD7CEE1EAE076500FDA83C /* ViewController.swift */,
 				83AD7CF01EAE076500FDA83C /* Main.storyboard */,
@@ -64,6 +81,15 @@
 			path = SocialEventSJSU;
 			sourceTree = "<group>";
 		};
+		A18C247BAEB3946446FDF7DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				720B45C0481F0F688912B414 /* Pods-SocialEventSJSU.debug.xcconfig */,
+				776CB2FEB520DAEDC761786F /* Pods-SocialEventSJSU.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83AD7CFB1EAE076500FDA83C /* Build configuration list for PBXNativeTarget "SocialEventSJSU" */;
 			buildPhases = (
+				5690CCD489A8043FF1C13CCD /* [CP] Check Pods Manifest.lock */,
 				83AD7CE51EAE076500FDA83C /* Sources */,
 				83AD7CE61EAE076500FDA83C /* Frameworks */,
 				83AD7CE71EAE076500FDA83C /* Resources */,
+				011699721E4A27F4550DF8A8 /* [CP] Embed Pods Frameworks */,
+				BAF30F36C2B14977D8E6DA61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +125,13 @@
 				TargetAttributes = {
 					83AD7CE81EAE076500FDA83C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6WA6Y7KBQJ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -130,6 +165,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		011699721E4A27F4550DF8A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialEventSJSU/Pods-SocialEventSJSU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5690CCD489A8043FF1C13CCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BAF30F36C2B14977D8E6DA61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialEventSJSU/Pods-SocialEventSJSU-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83AD7CE51EAE076500FDA83C /* Sources */ = {
@@ -258,9 +341,21 @@
 		};
 		83AD7CFC1EAE076500FDA83C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720B45C0481F0F688912B414 /* Pods-SocialEventSJSU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocialEventSJSU/SocialEventSJSU.entitlements;
+				DEVELOPMENT_TEAM = 6WA6Y7KBQJ;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Bolts\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKCoreKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKShareKit\"",
+				);
 				INFOPLIST_FILE = SocialEventSJSU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.mam.kito.SocialEventSJSU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +365,21 @@
 		};
 		83AD7CFD1EAE076500FDA83C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776CB2FEB520DAEDC761786F /* Pods-SocialEventSJSU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocialEventSJSU/SocialEventSJSU.entitlements;
+				DEVELOPMENT_TEAM = 6WA6Y7KBQJ;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Bolts\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKCoreKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKShareKit\"",
+				);
 				INFOPLIST_FILE = SocialEventSJSU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.sjsu.mam.kito.SocialEventSJSU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +406,7 @@
 				83AD7CFD1EAE076500FDA83C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
