@@ -14,6 +14,9 @@
 		83AD7CF41EAE076500FDA83C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83AD7CF31EAE076500FDA83C /* Assets.xcassets */; };
 		83AD7CF71EAE076500FDA83C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AD7CF51EAE076500FDA83C /* LaunchScreen.storyboard */; };
 		C365F45B1EAF30F1007D9C27 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C365F45A1EAF30F1007D9C27 /* FBSDKLoginKit.framework */; };
+		C3A1E5181EAFFE6C006D024A /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1E5171EAFFE6C006D024A /* EventListViewController.swift */; };
+		C3A1E51B1EB00356006D024A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1E5191EB00356006D024A /* SignUpViewController.swift */; };
+		C3A1E51C1EB00356006D024A /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1E51A1EB00356006D024A /* SignViewController.swift */; };
 		C3B898B81EAF397000081B5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B898B71EAF397000081B5B /* MapViewController.swift */; };
 		C3B898BA1EAFBD0400081B5B /* EventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B898B91EAFBD0400081B5B /* EventAnnotation.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +33,9 @@
 		83AD7CF61EAE076500FDA83C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83AD7CF81EAE076500FDA83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C365F45A1EAF30F1007D9C27 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4.22.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		C3A1E5171EAFFE6C006D024A /* EventListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		C3A1E5191EB00356006D024A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C3A1E51A1EB00356006D024A /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		C3B898B71EAF397000081B5B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C3B898B91EAFBD0400081B5B /* EventAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAnnotation.swift; sourceTree = "<group>"; };
 		F558A5EAC1A137D5C54386A5 /* Pods-SocialEventSJSU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialEventSJSU.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialEventSJSU/Pods-SocialEventSJSU.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,7 +88,10 @@
 				8364A9911EAE210A00050B76 /* SocialEventSJSU.entitlements */,
 				83AD7CEC1EAE076500FDA83C /* AppDelegate.swift */,
 				83AD7CEE1EAE076500FDA83C /* ViewController.swift */,
+				C3A1E5191EB00356006D024A /* SignUpViewController.swift */,
+				C3A1E51A1EB00356006D024A /* SignViewController.swift */,
 				83AD7CF01EAE076500FDA83C /* Main.storyboard */,
+				C3A1E5171EAFFE6C006D024A /* EventListViewController.swift */,
 				C3B898B91EAFBD0400081B5B /* EventAnnotation.swift */,
 				C3B898B71EAF397000081B5B /* MapViewController.swift */,
 				83AD7CF31EAE076500FDA83C /* Assets.xcassets */,
@@ -229,6 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A1E51C1EB00356006D024A /* SignViewController.swift in Sources */,
+				C3A1E51B1EB00356006D024A /* SignUpViewController.swift in Sources */,
+				C3A1E5181EAFFE6C006D024A /* EventListViewController.swift in Sources */,
 				83AD7CEF1EAE076500FDA83C /* ViewController.swift in Sources */,
 				C3B898BA1EAFBD0400081B5B /* EventAnnotation.swift in Sources */,
 				C3B898B81EAF397000081B5B /* MapViewController.swift in Sources */,

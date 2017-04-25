@@ -7,5 +7,24 @@
 //
 
 import Foundation
+import MapKit
 
-class EventAnnotation
+class EventAnnotation: NSObject, MKAnnotation {
+    var eventName: String = ""
+    var locationName: String
+    var coordinate: CLLocationCoordinate2D
+    
+    
+    init(eventName: String, locationName: String, coordinate: CLLocationCoordinate2D){
+        self.eventName = eventName
+        self.locationName = locationName
+        self.coordinate = coordinate
+        
+        super.init()
+    }
+    
+    var subtitle: String? {
+        return locationName
+    }
+    
+}
