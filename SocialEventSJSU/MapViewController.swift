@@ -36,6 +36,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
         let yourAnnotationAtIndex = 0
         mapView.selectAnnotation(mapView.annotations[yourAnnotationAtIndex], animated: true)// Do any additional setup after loading the view.
+        mapView.showsPointsOfInterest = true
     }
     
     

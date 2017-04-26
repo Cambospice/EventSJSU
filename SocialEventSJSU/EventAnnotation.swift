@@ -22,6 +22,9 @@ class EventAnnotation: NSObject, MKAnnotation {
         
         super.init()
     }
+    var title: String? {
+        return eventName
+    }
     
     var subtitle: String? {
         return locationName
