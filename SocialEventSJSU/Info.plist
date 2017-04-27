@@ -2,7 +2,32 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    
+            <key>AWS</key>
+            <dict>
+                <key>IdentityManager</key>
+                <dict>
+                    <key>Default</key>
+                    <dict/>
+                </dict>
+                <key>CredentialsProvider</key>
+                <dict>
+                    <key>CognitoIdentity</key>
+                    <dict>
+                        <key>Default</key>
+                        <dict>
+                            <key>PoolId</key>
+                            <string>us-east-1:9cb62659-a3d8-4497-9bfb-c3b3ba07ab72</string>
+                            <key>Region</key>
+                            <string>us-east-1</string>
+                        </dict>
+                    </dict>
+                </dict>
+                <key>MobileHub</key>
+                <dict>
+                    <key>ProjectClientId</key>
+                    <string>MobileHub 457d3266-4f29-4f6d-9366-d6eada1b6d02 aws-my-sample-app-ios-swift-v0.13</string>
+                </dict>
+            </dict>
     <key>CFBundleURLTypes</key>
     <array>
         <dict>

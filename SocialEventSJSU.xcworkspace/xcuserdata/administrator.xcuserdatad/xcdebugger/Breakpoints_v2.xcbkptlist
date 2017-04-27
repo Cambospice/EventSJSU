@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocialEventSJSU/AppDelegate.swift"
-            timestampString = "514849406.706417"
+            timestampString = "514946537.37387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -193,6 +193,204 @@
             endingLineNumber = "39"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocialEventSJSU/AppDelegate.swift"
+            timestampString = "514946537.37387"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "application(_:open:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocialEventSJSU/AppDelegate.swift"
+            timestampString = "514946537.37387"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "application(_:open:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/AmazonAws/Models/NoSQL/EventsList.swift"
+            timestampString = "514943644.609705"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocialEventSJSU.EventsList.__deallocating_deinit"
+                  moduleName = "SocialEventSJSU"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrator/Desktop/EventSJSU/Pods/AmazonAws/Models/NoSQL/EventsList.swift"
+                  timestampString = "514946491.920833"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocialEventSJSU.EventsList.init () -&gt; Swift.ImplicitlyUnwrappedOptional&lt;SocialEventSJSU.EventsList&gt;"
+                  moduleName = "SocialEventSJSU"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrator/Desktop/EventSJSU/Pods/AmazonAws/Models/NoSQL/EventsList.swift"
+                  timestampString = "514946491.923984"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocialEventSJSU.EventsList.__allocating_init () -&gt; Swift.ImplicitlyUnwrappedOptional&lt;SocialEventSJSU.EventsList&gt;"
+                  moduleName = "SocialEventSJSU"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrator/Desktop/EventSJSU/Pods/AmazonAws/Models/NoSQL/EventsList.swift"
+                  timestampString = "514946491.926394"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocialEventSJSU.EventsList.init (dictionary : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Dictionary&lt;Swift.AnyHashable, Any&gt;&gt;, error : ()) throws -&gt; SocialEventSJSU.EventsList"
+                  moduleName = "SocialEventSJSU"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrator/Desktop/EventSJSU/Pods/AmazonAws/Models/NoSQL/EventsList.swift"
+                  timestampString = "514946491.928327"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "82">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocialEventSJSU.EventsList.__allocating_init (dictionary : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Dictionary&lt;Swift.AnyHashable, Any&gt;&gt;, error : ()) throws -&gt; SocialEventSJSU.EventsList"
+                  moduleName = "SocialEventSJSU"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrator/Desktop/EventSJSU/Pods/AmazonAws/Models/NoSQL/EventsList.swift"
+                  timestampString = "514946491.930384"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "11">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocialEventSJSU.EventsList.init (coder : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSCoder&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;SocialEventSJSU.EventsList&gt;"
+                  moduleName = "SocialEventSJSU"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrator/Desktop/EventSJSU/Pods/AmazonAws/Models/NoSQL/EventsList.swift"
+                  timestampString = "514946491.934734"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "63">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocialEventSJSU.EventsList.init (dictionary : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Dictionary&lt;Swift.AnyHashable, Any&gt;&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;SocialEventSJSU.EventsList&gt;"
+                  moduleName = "SocialEventSJSU"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrator/Desktop/EventSJSU/Pods/AmazonAws/Models/NoSQL/EventsList.swift"
+                  timestampString = "514946491.936638"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "73">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocialEventSJSU.EventsList.__allocating_init (dictionary : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Dictionary&lt;Swift.AnyHashable, Any&gt;&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;SocialEventSJSU.EventsList&gt;"
+                  moduleName = "SocialEventSJSU"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrator/Desktop/EventSJSU/Pods/AmazonAws/Models/NoSQL/EventsList.swift"
+                  timestampString = "514946491.938722"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "11">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocialEventSJSU.EventsList.init (externalRepresentation : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Dictionary&lt;Swift.AnyHashable, Any&gt;&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;SocialEventSJSU.EventsList&gt;"
+                  moduleName = "SocialEventSJSU"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrator/Desktop/EventSJSU/Pods/AmazonAws/Models/NoSQL/EventsList.swift"
+                  timestampString = "514946491.941446"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "73">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocialEventSJSU.EventsList.__allocating_init (externalRepresentation : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Dictionary&lt;Swift.AnyHashable, Any&gt;&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;SocialEventSJSU.EventsList&gt;"
+                  moduleName = "SocialEventSJSU"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/administrator/Desktop/EventSJSU/Pods/AmazonAws/Models/NoSQL/EventsList.swift"
+                  timestampString = "514946491.943528"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "11">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

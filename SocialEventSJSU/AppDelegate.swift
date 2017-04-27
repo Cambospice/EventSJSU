@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-       
         if FBSDKAccessToken.current() != nil {
             print("run through here")
             self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MapViewController")
@@ -26,15 +25,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
              FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         }
         
-       
-        return true
+    return AWSMobileClient.sharedInstance.didFinishLaunching(application, withOptions: launchOptions)
+    
     }
+    
+    
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
        
-        let handled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String!, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        let fb = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String!, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        let aws = AWSMobileClient.sharedInstance.withApplication(app, withURL: url, withSourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String!, withAnnotation: options)
         
-        return handled
+        return fb || aws
     }
         
     
@@ -54,6 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
+        AWSMobileClient.sharedInstance.applicationDidBecomeActive(application)
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
