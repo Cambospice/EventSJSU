@@ -19,7 +19,7 @@
 		C35B24841EB166EA00450AD3 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B246E1EB166EA00450AD3 /* AWSCognito.framework */; };
 		C35B24851EB166EA00450AD3 /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B246F1EB166EA00450AD3 /* AWSCognitoIdentityProvider.framework */; };
 		C35B24861EB166EA00450AD3 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B24701EB166EA00450AD3 /* AWSCore.framework */; };
-		C35B24871EB166EA00450AD3 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B24711EB166EA00450AD3 /* AWSDynamoDB.framework */; };
+		C35B24871EB166EA00450AD3 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B24711EB166EA00450AD3 /* AWSDynamoDB.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C35B24891EB166EA00450AD3 /* AWSElasticLoadBalancing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B24731EB166EA00450AD3 /* AWSElasticLoadBalancing.framework */; };
 		C35B248B1EB166EA00450AD3 /* AWSKinesis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B24751EB166EA00450AD3 /* AWSKinesis.framework */; };
 		C35B248C1EB166EA00450AD3 /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B24761EB166EA00450AD3 /* AWSLambda.framework */; };
@@ -507,6 +507,7 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKShareKit\"",
 					"$(PROJECT_DIR)/Pods/AmazonAws",
+					"$(SRCROOT)/**",
 				);
 				INFOPLIST_FILE = SocialEventSJSU/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
@@ -532,6 +533,7 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKShareKit\"",
 					"$(PROJECT_DIR)/Pods/AmazonAws",
+					"$(SRCROOT)/**",
 				);
 				INFOPLIST_FILE = SocialEventSJSU/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
