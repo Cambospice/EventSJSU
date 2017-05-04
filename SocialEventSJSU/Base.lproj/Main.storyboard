@@ -394,7 +394,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkM-Kg-AmY">
-                                <rect key="frame" x="0.0" y="547" width="415" height="60"/>
+                                <rect key="frame" x="0.0" y="539" width="415" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99908000230000005" green="0.9204312563" blue="0.14163535830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -406,19 +406,19 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="events_spartan_logo" translatesAutoresizingMaskIntoConstraints="NO" id="2iW-jN-gbG">
-                                <rect key="frame" x="59" y="106" width="300" height="300"/>
+                                <rect key="frame" x="37" y="183" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <segue destination="rC8-MX-FQu" kind="presentation" id="GmK-3v-g1u"/>
+                        <segue destination="rC8-MX-FQu" kind="presentation" identifier="showNew" id="GmK-3v-g1u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHg-Gs-WYI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1255" y="-1035"/>
+            <point key="canvasLocation" x="2" y="-1743"/>
         </scene>
         <!--registerViewController-->
         <scene sceneID="Qc4-Vf-Dzc">
