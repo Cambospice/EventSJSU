@@ -40,7 +40,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
         else if error == nil {
         print("Successfull logged in via facebook")
-        self.performSegue(withIdentifier: "Tabs", sender: self)
+        self.performSegue(withIdentifier: "showNew", sender: self)
         }
     }
 
