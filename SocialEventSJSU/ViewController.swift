@@ -22,11 +22,11 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         loginButton.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32, height: 50)
         
         loginButton.delegate = self
-        }
-    
+        
+    }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        print("Logged out of facebook")
+        print("Did out of facebook")
     }
    
  
@@ -35,12 +35,11 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             print(error)
             return
         } else if FBSDKAccessToken.current() == nil {
-            welcomeMessage.text = "Authentication was canceled"
+            welcomeMessage.text = "Authentication was cancled"
             print("User click cancel")
         }
-        else if error == nil {
+        else {
         print("Successfull logged in via facebook")
-        self.performSegue(withIdentifier: "showNew", sender: self)
         }
     }
 
