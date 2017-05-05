@@ -13,8 +13,12 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     @IBOutlet weak var welcomeMessage: UILabel!
 
+    
+        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         
         let loginButton = FBSDKLoginButton()
@@ -23,10 +27,28 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         loginButton.delegate = self
         
+       
+        
+        
+        }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if FBSDKAccessToken.current() != nil {
+        
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "showNew", sender: self)
+        }
+      }
     }
     
+ 
+    
+    
+    
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        print("Did out of facebook")
+        print("Logged out of facebook")
     }
    
  
@@ -35,11 +57,12 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             print(error)
             return
         } else if FBSDKAccessToken.current() == nil {
-            welcomeMessage.text = "Authentication was cancled"
+            welcomeMessage.text = "Authentication was canceled"
             print("User click cancel")
         }
-        else {
+        else if error == nil {
         print("Successfull logged in via facebook")
+        self.performSegue(withIdentifier: "showNew", sender: self)
         }
     }
 
