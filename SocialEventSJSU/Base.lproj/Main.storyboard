@@ -214,7 +214,7 @@
         <!--Homepage-->
         <scene sceneID="GyJ-zH-CIh">
             <objects>
-                <viewController title="Homepage" id="qPn-bu-uw6" sceneMemberID="viewController">
+                <viewController title="Homepage" id="qPn-bu-uw6" customClass="HomeViewController" customModule="SocialEventSJSU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dOv-2q-jQb"/>
                         <viewControllerLayoutGuide type="bottom" id="tf1-gK-fBP"/>
@@ -226,11 +226,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ton-CT-uQA">
                                 <rect key="frame" x="3" y="140" width="232" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="232" id="hVw-f9-eDB"/>
-                                    <constraint firstAttribute="height" constant="60" id="ram-HK-GrO"/>
+                                    <constraint firstAttribute="height" constant="60" id="94K-fL-G96"/>
+                                    <constraint firstAttribute="width" constant="232" id="GzO-aP-ccg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="27"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryd-PI-bmw">
@@ -262,25 +262,28 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
-                        <color key="backgroundColor" red="0.15236009789999999" green="0.39359281680000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="ryd-PI-bmw" firstAttribute="top" secondItem="Ton-CT-uQA" secondAttribute="bottom" constant="1" id="0By-i3-01C"/>
                             <constraint firstItem="tf1-gK-fBP" firstAttribute="top" secondItem="GUD-HL-XRi" secondAttribute="bottom" constant="65" id="2PB-fd-qHi"/>
                             <constraint firstItem="mXF-7Z-KUs" firstAttribute="centerX" secondItem="ryd-PI-bmw" secondAttribute="centerX" id="6qG-Pd-I1f"/>
                             <constraint firstItem="ryd-PI-bmw" firstAttribute="leading" secondItem="GUD-HL-XRi" secondAttribute="leading" id="CGg-jt-dCa"/>
                             <constraint firstItem="mXF-7Z-KUs" firstAttribute="trailing" secondItem="xSs-wQ-anh" secondAttribute="trailing" id="I4M-cl-Bhq"/>
                             <constraint firstItem="mXF-7Z-KUs" firstAttribute="top" secondItem="xSs-wQ-anh" secondAttribute="bottom" id="Jfz-TW-Gfw"/>
                             <constraint firstItem="ryd-PI-bmw" firstAttribute="leading" secondItem="AUb-lH-a8X" secondAttribute="leadingMargin" id="Kn6-bK-BLB"/>
+                            <constraint firstItem="Ton-CT-uQA" firstAttribute="leading" secondItem="AUb-lH-a8X" secondAttribute="leadingMargin" constant="-13" id="LZt-zJ-VUh"/>
                             <constraint firstItem="ryd-PI-bmw" firstAttribute="trailing" secondItem="AUb-lH-a8X" secondAttribute="trailingMargin" id="Ox3-85-KU9"/>
-                            <constraint firstItem="Ton-CT-uQA" firstAttribute="top" secondItem="mXF-7Z-KUs" secondAttribute="bottom" constant="52" id="YLk-q1-6SF"/>
                             <constraint firstItem="tf1-gK-fBP" firstAttribute="top" secondItem="ryd-PI-bmw" secondAttribute="bottom" constant="244" id="aJm-kW-vKt"/>
                             <constraint firstItem="mXF-7Z-KUs" firstAttribute="leading" secondItem="xSs-wQ-anh" secondAttribute="leading" id="dgO-pi-790"/>
                             <constraint firstItem="xSs-wQ-anh" firstAttribute="leading" secondItem="AUb-lH-a8X" secondAttribute="leading" id="mNv-IY-jYM"/>
                             <constraint firstItem="ryd-PI-bmw" firstAttribute="trailing" secondItem="GUD-HL-XRi" secondAttribute="trailing" id="ohW-3F-4Vc"/>
-                            <constraint firstItem="Ton-CT-uQA" firstAttribute="leading" secondItem="AUb-lH-a8X" secondAttribute="leadingMargin" constant="-13" id="pWu-hE-cQk"/>
                             <constraint firstItem="xSs-wQ-anh" firstAttribute="top" secondItem="AUb-lH-a8X" secondAttribute="top" id="yki-7U-wfb"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Homepage" image="Home " selectedImage="Home " id="hfg-5N-mIl"/>
+                    <connections>
+                        <segue destination="OP2-gg-hMX" kind="presentation" identifier="backlogin" id="zhp-DE-sEi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMh-wR-3M0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -299,7 +302,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pAH-IZ-62m" id="idZ-nU-Gky">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -660,7 +663,7 @@
         <image name="events_spartan_logo" width="360" height="360"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2jV-Hd-9xc"/>
+        <segue reference="zhp-DE-sEi"/>
         <segue reference="kYm-V7-OOl"/>
         <segue reference="TRm-9n-p0l"/>
     </inferredMetricsTieBreakers>
