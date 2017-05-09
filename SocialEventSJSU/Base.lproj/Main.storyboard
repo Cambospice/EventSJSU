@@ -114,6 +114,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ig1-I0-5Yn" kind="presentation" id="O6h-i4-DKE"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZKw-Ly-xiL">
                                 <rect key="frame" x="14" y="627" width="344" height="30"/>
@@ -302,7 +305,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pAH-IZ-62m" id="idZ-nU-Gky">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -334,15 +337,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Map" id="NrW-5a-jvD">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="wcN-Ks-zK7">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rti-Zb-3AL">
-                                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                                <state key="normal" title="+"/>
-                                            </button>
+                                        <barButtonItem key="rightBarButtonItem" title="+" id="Ef3-Uu-YxV">
                                             <connections>
-                                                <segue destination="s4h-bA-DeJ" kind="presentation" id="pC0-Qo-mvD"/>
+                                                <segue destination="s4h-bA-DeJ" kind="presentation" id="Dp8-cO-ayk"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -666,5 +663,6 @@
         <segue reference="zhp-DE-sEi"/>
         <segue reference="kYm-V7-OOl"/>
         <segue reference="TRm-9n-p0l"/>
+        <segue reference="O6h-i4-DKE"/>
     </inferredMetricsTieBreakers>
 </document>
