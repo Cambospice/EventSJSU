@@ -38,6 +38,7 @@
 		C35B24AE1EB1693800450AD3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B24AD1EB1693800450AD3 /* libz.tbd */; };
 		C35B24B01EB169DA00450AD3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B24AF1EB169D900450AD3 /* libsqlite3.dylib */; };
 		C365F45B1EAF30F1007D9C27 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C365F45A1EAF30F1007D9C27 /* FBSDKLoginKit.framework */; };
+		C399FE101EC287C7007EFD7B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C399FE0F1EC287C7007EFD7B /* HomeViewController.swift */; };
 		C3A1E5181EAFFE6C006D024A /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1E5171EAFFE6C006D024A /* EventListViewController.swift */; };
 		C3A1E51B1EB00356006D024A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1E5191EB00356006D024A /* SignUpViewController.swift */; };
 		C3A1E51C1EB00356006D024A /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1E51A1EB00356006D024A /* SignViewController.swift */; };
@@ -85,6 +86,7 @@
 		C35B24AD1EB1693800450AD3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		C35B24AF1EB169D900450AD3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		C365F45A1EAF30F1007D9C27 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4.22.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		C399FE0F1EC287C7007EFD7B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C3A1E5171EAFFE6C006D024A /* EventListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		C3A1E5191EB00356006D024A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C3A1E51A1EB00356006D024A /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				C3B898B91EAFBD0400081B5B /* EventAnnotation.swift */,
 				C3B898B71EAF397000081B5B /* MapViewController.swift */,
 				C35B24221EB162ED00450AD3 /* DatabaseEventListModel.swift */,
+				C399FE0F1EC287C7007EFD7B /* HomeViewController.swift */,
 				83AD7CF31EAE076500FDA83C /* Assets.xcassets */,
 				83AD7CF51EAE076500FDA83C /* LaunchScreen.storyboard */,
 				83AD7CF81EAE076500FDA83C /* Info.plist */,
@@ -371,6 +374,7 @@
 				C35B24231EB162ED00450AD3 /* DatabaseEventListModel.swift in Sources */,
 				83AD7CEF1EAE076500FDA83C /* ViewController.swift in Sources */,
 				C3B898BA1EAFBD0400081B5B /* EventAnnotation.swift in Sources */,
+				C399FE101EC287C7007EFD7B /* HomeViewController.swift in Sources */,
 				C3B898B81EAF397000081B5B /* MapViewController.swift in Sources */,
 				83AD7CED1EAE076500FDA83C /* AppDelegate.swift in Sources */,
 				C35B24AA1EB168B000450AD3 /* AWSMobileClient.swift in Sources */,
