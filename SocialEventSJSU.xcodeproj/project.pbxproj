@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		096ADCF572CBCA61FD566E11 /* Pods_SocialEventSJSU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16AA679A3F6C1BEC29534E24 /* Pods_SocialEventSJSU.framework */; };
+		7713E7111EC41787009FCA24 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713E7101EC41787009FCA24 /* FormViewController.swift */; };
 		83AD7CED1EAE076500FDA83C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD7CEC1EAE076500FDA83C /* AppDelegate.swift */; };
 		83AD7CEF1EAE076500FDA83C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD7CEE1EAE076500FDA83C /* ViewController.swift */; };
 		83AD7CF21EAE076500FDA83C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AD7CF01EAE076500FDA83C /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		16AA679A3F6C1BEC29534E24 /* Pods_SocialEventSJSU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialEventSJSU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		420B1ED232852B76A0EDA0B0 /* Pods-SocialEventSJSU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialEventSJSU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialEventSJSU/Pods-SocialEventSJSU.debug.xcconfig"; sourceTree = "<group>"; };
+		7713E7101EC41787009FCA24 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		8364A9911EAE210A00050B76 /* SocialEventSJSU.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialEventSJSU.entitlements; sourceTree = "<group>"; };
 		83AD7CE91EAE076500FDA83C /* SocialEventSJSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialEventSJSU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AD7CEC1EAE076500FDA83C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				C3A1E5191EB00356006D024A /* SignUpViewController.swift */,
 				C3A1E51A1EB00356006D024A /* SignViewController.swift */,
 				83AD7CF01EAE076500FDA83C /* Main.storyboard */,
+				7713E7101EC41787009FCA24 /* FormViewController.swift */,
 				C3A1E5171EAFFE6C006D024A /* EventListViewController.swift */,
 				C3B898B91EAFBD0400081B5B /* EventAnnotation.swift */,
 				C3B898B71EAF397000081B5B /* MapViewController.swift */,
@@ -373,6 +376,7 @@
 				C3A1E5181EAFFE6C006D024A /* EventListViewController.swift in Sources */,
 				C35B24231EB162ED00450AD3 /* DatabaseEventListModel.swift in Sources */,
 				83AD7CEF1EAE076500FDA83C /* ViewController.swift in Sources */,
+				7713E7111EC41787009FCA24 /* FormViewController.swift in Sources */,
 				C3B898BA1EAFBD0400081B5B /* EventAnnotation.swift in Sources */,
 				C399FE101EC287C7007EFD7B /* HomeViewController.swift in Sources */,
 				C3B898B81EAF397000081B5B /* MapViewController.swift in Sources */,
