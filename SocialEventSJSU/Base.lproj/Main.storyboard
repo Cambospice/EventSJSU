@@ -371,7 +371,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pAH-IZ-62m" id="idZ-nU-Gky">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -399,11 +399,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3QK-fq-ZrR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88K-rg-9Qb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Map" id="NrW-5a-jvD">
-                                        <barButtonItem key="rightBarButtonItem" title="+" id="Ef3-Uu-YxV">
+                                        <barButtonItem key="rightBarButtonItem" image="plus" id="Ef3-Uu-YxV">
                                             <connections>
                                                 <segue destination="Tbc-4m-2ha" kind="presentation" id="BpJ-FE-QgZ"/>
                                             </connections>
@@ -411,19 +414,16 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3QK-fq-ZrR">
-                                <rect key="frame" x="0.0" y="44" width="375" height="576"/>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="88K-rg-9Qb" secondAttribute="trailing" id="AA9-VL-EKV"/>
-                            <constraint firstItem="3QK-fq-ZrR" firstAttribute="top" secondItem="88K-rg-9Qb" secondAttribute="bottom" id="Gak-Hm-GYa"/>
-                            <constraint firstItem="88K-rg-9Qb" firstAttribute="top" secondItem="IlY-Vk-o2I" secondAttribute="bottom" constant="-20" id="HRK-20-x2v"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="3QK-fq-ZrR" secondAttribute="bottom" constant="47" id="I1k-XJ-XYm"/>
-                            <constraint firstItem="3QK-fq-ZrR" firstAttribute="leading" secondItem="88K-rg-9Qb" secondAttribute="leading" id="VXo-X7-2Nk"/>
-                            <constraint firstItem="3QK-fq-ZrR" firstAttribute="trailing" secondItem="88K-rg-9Qb" secondAttribute="trailing" id="f1D-hF-qTT"/>
-                            <constraint firstItem="88K-rg-9Qb" firstAttribute="leading" secondItem="tsP-Wt-yD3" secondAttribute="leading" id="qiv-5s-wnG"/>
+                            <constraint firstItem="3QK-fq-ZrR" firstAttribute="bottom" secondItem="s0I-ot-lsR" secondAttribute="top" id="Ftr-qr-Q9C"/>
+                            <constraint firstItem="3QK-fq-ZrR" firstAttribute="top" secondItem="88K-rg-9Qb" secondAttribute="bottom" id="R3n-S1-okf"/>
+                            <constraint firstItem="88K-rg-9Qb" firstAttribute="leading" secondItem="3QK-fq-ZrR" secondAttribute="leading" id="T3G-oI-2YF"/>
+                            <constraint firstAttribute="trailing" secondItem="88K-rg-9Qb" secondAttribute="trailing" id="seD-Kj-nsO"/>
+                            <constraint firstItem="88K-rg-9Qb" firstAttribute="trailing" secondItem="3QK-fq-ZrR" secondAttribute="trailing" id="sxK-aq-fJ0"/>
+                            <constraint firstItem="88K-rg-9Qb" firstAttribute="leading" secondItem="tsP-Wt-yD3" secondAttribute="leading" id="unp-lO-gPN"/>
+                            <constraint firstItem="88K-rg-9Qb" firstAttribute="top" secondItem="IlY-Vk-o2I" secondAttribute="bottom" id="vmP-0E-Vn6"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="6D0-Y3-RJd"/>
@@ -433,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ace-38-RVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3630" y="-1918"/>
+            <point key="canvasLocation" x="3629.5999999999999" y="-1918.2908545727139"/>
         </scene>
         <!--initViewController-->
         <scene sceneID="LS8-nG-da8">
@@ -724,6 +724,7 @@
         <image name="Home " width="24" height="21"/>
         <image name="Settings 2" width="21" height="21"/>
         <image name="events_spartan_logo" width="360" height="360"/>
+        <image name="plus" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Tkn-eQ-d2Z"/>
