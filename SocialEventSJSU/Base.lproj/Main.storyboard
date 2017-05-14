@@ -211,6 +211,9 @@
                                 <state key="normal" title="Add Event">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addEvent:" destination="Tbc-4m-2ha" eventType="touchUpInside" id="0xg-6R-NV7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mj-0M-F0v">
                                 <rect key="frame" x="-1" y="20" width="88" height="38"/>
@@ -252,6 +255,8 @@
                     <connections>
                         <outlet property="dateField" destination="y8N-RE-iTS" id="uz1-7t-8yD"/>
                         <outlet property="endDate" destination="0z0-0g-nhk" id="t1J-jQ-bps"/>
+                        <outlet property="eventDescription" destination="mf2-TV-Zs1" id="FQG-C9-WFk"/>
+                        <outlet property="eventName" destination="pHx-h0-uVD" id="DPU-uZ-Wo9"/>
                         <outlet property="location" destination="r9w-pu-9yn" id="vcu-mT-afg"/>
                         <outlet property="textBox" destination="W74-uc-uXc" id="Hrx-bw-WoF"/>
                     </connections>
@@ -371,7 +376,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pAH-IZ-62m" id="idZ-nU-Gky">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

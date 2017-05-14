@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import AWSDynamoDB
+import AWSMobileHubHelper
 
 class FormViewController: UIViewController, UIPickerViewDataSource {
     
+    @IBOutlet weak var eventName: UITextField!
     @IBOutlet weak var location: UIPickerView!
     @IBOutlet weak var textBox: UITextField!
+    @IBOutlet weak var eventDescription: UITextField!
     
-    var list = ["Engineering Building", "Student Union", "Duncan Hall"]
-    
+    let list = ["Engineering Building", "Student Union", "Duncan Hall"]
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -111,6 +114,48 @@ class FormViewController: UIViewController, UIPickerViewDataSource {
         self.view.endEditing(true)
     }
     
+    func locationCoordinates(locationName: String) -> (Double, Double) {
+        var latitude = 0.0
+        var longitude = 0.0
+        switch(locationName){
+        case ("Engineering Building"):
+            latitude = 37.3370
+            longitude = -121.8816
+            return (latitude,longitude)
+        case ("Student Union"):
+            latitude = 37.3363
+            longitude = -121.8813
+            return (latitude,longitude)
+        case ("Duncan Hall"):
+            latitude = 37.332325
+            longitude = -121.881910
+            return (latitude,longitude)
+        default:
+            return (latitude,longitude)
+    }
+    }
+    
+    @IBAction func addEvent(_ sender: Any) {
+        let objectMapper = AWSDynamoDBObjectMapper.default()
+        
+        let itemToCreate: EventsList = EventsList()
+        
+        itemToCreate._userId = AWSIdentityManager.default().identityId!
+        itemToCreate._eventName = eventName.text!
+        itemToCreate._eventDate = dateField.text!
+        itemToCreate._endDate = endDate.text!
+        itemToCreate._eventLocation = textBox.text!
+        itemToCreate._description = eventDescription.text!
+        itemToCreate._latitude = locationCoordinates(locationName: textBox.text!).0 as NSNumber
+        itemToCreate._longitude = locationCoordinates(locationName: textBox.text!).1 as NSNumber
+        objectMapper.save(itemToCreate, completionHandler: {(error: Error?) -> Void in
+            if let error = error {
+                print("Amazon DynamoDB Save Error: \(error)")
+                return
+            }
+            print("Item saved.")
+        })
+    }
     
     
 }

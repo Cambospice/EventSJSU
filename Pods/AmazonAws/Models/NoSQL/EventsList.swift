@@ -19,6 +19,7 @@ class EventsList: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     var _userId: String?
     var _eventDate: String?
+    var _endDate: String?
     var _description: String?
     var _eventLocation: String?
     var _eventName: String?
@@ -44,6 +45,7 @@ class EventsList: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
         return [
                "_userId" : "userId",
                "_eventDate" : "eventDate",
+               "_endDate" : "endDate",
                "_description" : "description",
                "_eventLocation" : "eventLocation",
                "_eventName" : "eventName",
