@@ -11,9 +11,14 @@ import MapKit
 import CoreLocation
 import CoreGraphics
 
-class MapViewController: UIViewController, MKMapViewDelegate {
-
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+    
+    
     @IBOutlet weak var mapView: MKMapView!
+    
+    //current location
+    let managerCurrentLocation = CLLocationManager()
+    
     let initialLocation = CLLocation(latitude: 37.3352, longitude:  -121.8811)
     let regionRadius: CLLocationDistance = 500
     var locationManager: CLLocationManager!
@@ -22,8 +27,26 @@ class MapViewController: UIViewController, MKMapViewDelegate {
      EventAnnotation(eventName: "Open House", locationName: "Engineering Building", coordinate: CLLocationCoordinate2DMake(37.3370, -121.8816))
     ]
    
+   
+    
+    /*
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations[0]
+        
+        
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+        
+        mapView.setRegion(region, animated: true)
+        self.mapView.showsUserLocation = true
+    }
+    */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         self.mapView.delegate = self
             func centerMapOnLocation(location:CLLocation) {
                 let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
@@ -33,10 +56,24 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             centerMapOnLocation(location: initialLocation)
         for eventAnnotation in eventAnnotations {
             mapView.addAnnotation(eventAnnotation)
+        
         }
         let yourAnnotationAtIndex = 0
         mapView.selectAnnotation(mapView.annotations[yourAnnotationAtIndex], animated: true)// Do any additional setup after loading the view.
         mapView.showsPointsOfInterest = true
+ 
+        
+        
+        
+        mapView.showsUserLocation = true
+        
+        
+        managerCurrentLocation.delegate = self
+        managerCurrentLocation.desiredAccuracy = kCLLocationAccuracyBest
+        managerCurrentLocation.requestWhenInUseAuthorization()
+        managerCurrentLocation.startUpdatingLocation()
+        
+        
     }
     
     
@@ -65,6 +102,67 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
     }*/
     
+  
+  
+    /*
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if !(annotation is MKUserLocation) {
+            let pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: String(annotation.hash))
+            
+            let rightButton = UIButton(type: .contactAdd)
+            rightButton.tag = annotation.hash
+            
+            pinView.animatesDrop = true
+            pinView.canShowCallout = true
+            pinView.rightCalloutAccessoryView = rightButton
+            
+                
+            return pinView
+        }
+        else {
+            return nil
+        }
+    }
+    */
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+       
+        let lat: Double = (view.annotation?.coordinate.latitude)!
+        let user_lat : String = String(format:"%f", lat)
+        
+        let longti: Double = (view.annotation?.coordinate.longitude)!
+        let user_longti : String = String(format:"%f", longti)
+        
+       
+            getDirection(latiB: user_lat, longtiB: user_longti)
+        
+       
+     
+    }
+    
+    //need to provide longtitude and latitude of B
+    func getDirection(latiB: String, longtiB: String ){
+        
+        var urlString = "http://maps.google.com/maps?"
+        
+        urlString += "saddr="
+        urlString += ""
+        urlString += ""
+        urlString += ""
+        urlString += "&daddr="
+        urlString += latiB
+        urlString += ","
+        urlString += longtiB
+        
+        let url = URL(string: urlString)!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
