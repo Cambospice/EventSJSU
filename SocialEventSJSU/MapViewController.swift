@@ -13,6 +13,8 @@ import CoreGraphics
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
+    var tempString = ""
+    var tempString1 = ""
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -133,11 +135,36 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         let longti: Double = (view.annotation?.coordinate.longitude)!
         let user_longti : String = String(format:"%f", longti)
         
-       
-            getDirection(latiB: user_lat, longtiB: user_longti)
+        tempString1 = view.annotation?.title! ?? "hello"
         
-       
-     
+        
+        
+        if view.isSelected {
+            let refreshAlert = UIAlertController(title: tempString1, message: "Would like to go to this event", preferredStyle: UIAlertControllerStyle.alert)
+            
+            refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                self.getDirection(latiB: user_lat, longtiB: user_longti)
+
+            }))
+            
+            refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+                print("Handle Cancel Logic here")
+            }))
+            
+            present(refreshAlert, animated: true, completion: nil)
+        }
+        
+    
+        /*
+        
+        tempString1 = view.annotation?.title! ?? "hello"
+      
+        //getDirection(latiB: user_lat, longtiB: user_longti)
+        print("1")
+       print(tempString)
+         
+         
+        */
     }
     
     //need to provide longtitude and latitude of B
