@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var databaseEvent = DatabaseEventListModel.dbModel
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        UINavigationBar.appearance().barTintColor = UIColor.lightGray
+        
         if FBSDKAccessToken.current() != nil {
             print("run through here")
             self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MapViewController")

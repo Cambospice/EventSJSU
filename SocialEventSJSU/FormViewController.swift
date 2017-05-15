@@ -18,7 +18,7 @@ class FormViewController: UIViewController, UIPickerViewDataSource {
     @IBOutlet weak var eventDescription: UITextField!
     var eventDB = DatabaseEventListModel.dbModel
     
-    let list = ["Engineering Building", "Student Union", "Duncan Hall"]
+    var list = ["Administration", "Art Building", "Boccardo Business Complex", "Business Tower", "Career Center", "Computer Center", "Central Classroom Building", "Clark Hall", "Cooling Plant", "Campus Village A", "Campus Village B", "Campus Village C", "Corporation Yard A", "Corporation Yard B", "Dining Commons", "Dudley Moorhead Hall", "Duncan Hall", "Dwight Bentel Hall", "Engineering Building", "Event Center", "Student Union", "Duncan Hall", ""]
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
