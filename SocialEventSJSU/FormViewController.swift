@@ -16,6 +16,7 @@ class FormViewController: UIViewController, UIPickerViewDataSource {
     @IBOutlet weak var location: UIPickerView!
     @IBOutlet weak var textBox: UITextField!
     @IBOutlet weak var eventDescription: UITextField!
+    var eventDB = DatabaseEventListModel.dbModel
     
     let list = ["Engineering Building", "Student Union", "Duncan Hall"]
     
@@ -155,6 +156,7 @@ class FormViewController: UIViewController, UIPickerViewDataSource {
             }
             print("Item saved.")
         })
+        eventDB.scanDB()
     }
     
     

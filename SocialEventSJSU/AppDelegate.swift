@@ -13,7 +13,7 @@ import FBSDKCoreKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var databaseEvent = DatabaseEventListModel.dbModel
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         if FBSDKAccessToken.current() != nil {
@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         else{
              FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         }
-        
+        databaseEvent.scanDB()
     return AWSMobileClient.sharedInstance.didFinishLaunching(application, withOptions: launchOptions)
     
     }

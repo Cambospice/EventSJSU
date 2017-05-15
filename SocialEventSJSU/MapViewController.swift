@@ -12,7 +12,7 @@ import CoreLocation
 import CoreGraphics
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-    
+    var databaseEvent: DatabaseEventListModel = DatabaseEventListModel.dbModel
     var tempString = ""
     var tempString1 = ""
     
@@ -24,11 +24,12 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     let initialLocation = CLLocation(latitude: 37.3352, longitude:  -121.8811)
     let regionRadius: CLLocationDistance = 500
     var locationManager: CLLocationManager!
-    let eventAnnotations: [EventAnnotation] =
-    [EventAnnotation(eventName: "Event Career Talk", locationName: "Student Union Ballroom", coordinate:CLLocationCoordinate2DMake(37.3363, -121.8813)),
-     EventAnnotation(eventName: "Open House", locationName: "Engineering Building", coordinate: CLLocationCoordinate2DMake(37.3370, -121.8816))
-    ]
-   
+    var eventAnnotations: [EventAnnotation]{
+        return databaseEvent.events
+    }
+    
+    
+    
    
     
     /*
@@ -45,6 +46,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     */
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,6 +58,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 mapView.setRegion(coordinateRegion, animated: true)
             }
             centerMapOnLocation(location: initialLocation)
+        
         for eventAnnotation in eventAnnotations {
             mapView.addAnnotation(eventAnnotation)
         

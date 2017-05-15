@@ -14,7 +14,6 @@
 		83AD7CF21EAE076500FDA83C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AD7CF01EAE076500FDA83C /* Main.storyboard */; };
 		83AD7CF41EAE076500FDA83C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83AD7CF31EAE076500FDA83C /* Assets.xcassets */; };
 		83AD7CF71EAE076500FDA83C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AD7CF51EAE076500FDA83C /* LaunchScreen.storyboard */; };
-		C35B24231EB162ED00450AD3 /* DatabaseEventListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B24221EB162ED00450AD3 /* DatabaseEventListModel.swift */; };
 		C35B24821EB166EA00450AD3 /* AWSAutoScaling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B246C1EB166EA00450AD3 /* AWSAutoScaling.framework */; };
 		C35B24831EB166EA00450AD3 /* AWSCloudWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B246D1EB166EA00450AD3 /* AWSCloudWatch.framework */; };
 		C35B24841EB166EA00450AD3 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35B246E1EB166EA00450AD3 /* AWSCognito.framework */; };
@@ -45,6 +44,7 @@
 		C3A1E51C1EB00356006D024A /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1E51A1EB00356006D024A /* SignViewController.swift */; };
 		C3B898B81EAF397000081B5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B898B71EAF397000081B5B /* MapViewController.swift */; };
 		C3B898BA1EAFBD0400081B5B /* EventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B898B91EAFBD0400081B5B /* EventAnnotation.swift */; };
+		C3E1EE6D1EC92ACE001E8996 /* DatabaseEventListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B24221EB162ED00450AD3 /* DatabaseEventListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -374,10 +374,10 @@
 				C3A1E51C1EB00356006D024A /* SignViewController.swift in Sources */,
 				C3A1E51B1EB00356006D024A /* SignUpViewController.swift in Sources */,
 				C3A1E5181EAFFE6C006D024A /* EventListViewController.swift in Sources */,
-				C35B24231EB162ED00450AD3 /* DatabaseEventListModel.swift in Sources */,
 				83AD7CEF1EAE076500FDA83C /* ViewController.swift in Sources */,
 				7713E7111EC41787009FCA24 /* FormViewController.swift in Sources */,
 				C3B898BA1EAFBD0400081B5B /* EventAnnotation.swift in Sources */,
+				C3E1EE6D1EC92ACE001E8996 /* DatabaseEventListModel.swift in Sources */,
 				C399FE101EC287C7007EFD7B /* HomeViewController.swift in Sources */,
 				C3B898B81EAF397000081B5B /* MapViewController.swift in Sources */,
 				83AD7CED1EAE076500FDA83C /* AppDelegate.swift in Sources */,
