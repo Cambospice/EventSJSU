@@ -142,12 +142,12 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         if view.isSelected {
             let refreshAlert = UIAlertController(title: tempString1, message: "Would like to go to this event", preferredStyle: UIAlertControllerStyle.alert)
             
-            refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            refreshAlert.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: { (action: UIAlertAction!) in
                 self.getDirection(latiB: user_lat, longtiB: user_longti)
 
             }))
             
-            refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+            refreshAlert.addAction(UIAlertAction(title: "Choose another event", style: .cancel, handler: { (action: UIAlertAction!) in
                 print("Handle Cancel Logic here")
             }))
             
