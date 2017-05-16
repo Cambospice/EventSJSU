@@ -9,7 +9,10 @@
 import UIKit
 
 class EventListViewController: UITableViewController {
-
+    var dbModel = DatabaseEventListModel.dbModel
+    var events: [EventAnnotation] {
+        return dbModel.events
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,28 +30,28 @@ class EventListViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 3
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return events.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventList", for: indexPath)
-
-        cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
+        let event = events[indexPath.row]
+        let eventName = event.eventName
+        let eventLocation = event.locationName
+        cell.textLabel?.text = eventName
+        cell.detailTextLabel?.text = eventLocation
+        
         // Configure the cell...
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Section \(section)"
+        return "List of Events in SJSU"
     }
     
 

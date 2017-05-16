@@ -18,7 +18,8 @@ class FormViewController: UIViewController, UIPickerViewDataSource {
     @IBOutlet weak var eventDescription: UITextField!
     var eventDB = DatabaseEventListModel.dbModel
     
-    var list = ["Administration", "Art Building", "Boccardo Business Complex", "Business Tower", "Career Center", "Computer Center", "Central Classroom Building", "Clark Hall", "Cooling Plant", "Campus Village A", "Campus Village B", "Campus Village C", "Corporation Yard A", "Corporation Yard B", "Dining Commons", "Dudley Moorhead Hall", "Duncan Hall", "Dwight Bentel Hall", "Engineering Building", "Event Center", "Student Union", "Duncan Hall", ""]
+    var list  = ["Administration", "Art Building", "Boccardo Business Complex", "Business Tower", "Career Center", "Computer Center", "Central Classroom Building", "Clark Hall", "Cooling Plant", "Campus Village A", "Campus Village B", "Campus Village C", "Corporation Yard A", "Corporation Yard B", "Dining Commons", "Dudley Moorhead Hall", "Duncan Hall", "Dwight Bentel Hall", "Engineering Building", "Event Center", "Student Union", ]
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -119,21 +120,73 @@ class FormViewController: UIViewController, UIPickerViewDataSource {
         var latitude = 0.0
         var longitude = 0.0
         switch(locationName){
+        case ("Administration"):
+            latitude = 37.336560
+            longitude = -121.882908
+        case ("Art Building"):
+            latitude = 37.335955
+            longitude = -121.879763
+        case ("Boccardo Business Complex"):
+            latitude = 37.336501
+            longitude  = -121.878754
+        case ("Business Tower"):
+            latitude = 37.337038
+            longitude = -121.878861
+        case ("Career Center"):
+            latitude = 37.336743
+            longitude =  -121.882834
+        case("Computer Center"):
+            latitude = 37.335937
+            longitude = -121.883305
+        case("Central Classroom Building"):
+            latitude = 37.335641
+            longitude = -121.881918
+        case("Clark Hall"):
+            latitude = 37.336035
+            longitude = -121.882477
+        case("Cooling Plant"):
+            latitude = 37.336088
+            longitude = -121.878498
+        case("Campus Village A"):
+            latitude = 37.334412
+            longitude = -121.877497
+        case("Campus Village B"):
+            latitude = 37.335031
+            longitude = -121.877516
+        case("Campus Village C"):
+            latitude = 37.335208
+            longitude = -121.878064
+        case("Corporation Yard A"):
+            latitude = 37.338154
+            longitude = -121.880229
+        case("Corporation Yard B"):
+            latitude = 37.338083
+            longitude = -121.879561
+        case("Dining Commons"):
+            latitude = 37.333944
+            longitude = -121.878511
+        case("Dudley Moorhead Hall"):
+            latitude = 37.336251
+            longitude = -121.883909
+        case("Dwight Bentel Hall"):
+            latitude = 37.334922
+            longitude = -121.882608
+        case("Event Center"):
+            latitude = 37.335242
+            longitude = -121.880034
         case ("Engineering Building"):
             latitude = 37.3370
             longitude = -121.8816
-            return (latitude,longitude)
         case ("Student Union"):
             latitude = 37.3363
             longitude = -121.8813
-            return (latitude,longitude)
         case ("Duncan Hall"):
             latitude = 37.332325
             longitude = -121.881910
-            return (latitude,longitude)
         default:
             return (latitude,longitude)
     }
+        return (latitude, longitude)
     }
     
     @IBAction func addEvent(_ sender: Any) {
@@ -157,6 +210,7 @@ class FormViewController: UIViewController, UIPickerViewDataSource {
             print("Item saved.")
         })
         eventDB.scanDB()
+        performSegue(withIdentifier: "backToTab", sender: self)
     }
     
     
