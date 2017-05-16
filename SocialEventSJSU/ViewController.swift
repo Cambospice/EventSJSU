@@ -58,7 +58,6 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             return
         } else if FBSDKAccessToken.current() == nil {
             //welcomeMessage.text = "Authentication was canceled"
-            print("User click cancel")
         }
         else if error == nil {
         print("Successfull logged in via facebook")
