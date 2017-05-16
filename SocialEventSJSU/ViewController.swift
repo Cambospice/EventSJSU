@@ -57,7 +57,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             print(error)
             return
         } else if FBSDKAccessToken.current() == nil {
-            welcomeMessage.text = "Authentication was canceled"
+            //welcomeMessage.text = "Authentication was canceled"
             print("User click cancel")
         }
         else if error == nil {
