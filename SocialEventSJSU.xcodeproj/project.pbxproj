@@ -43,10 +43,10 @@
 		C3A1E51C1EB00356006D024A /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1E51A1EB00356006D024A /* SignViewController.swift */; };
 		C3B898B81EAF397000081B5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B898B71EAF397000081B5B /* MapViewController.swift */; };
 		C3B898BA1EAFBD0400081B5B /* EventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B898B91EAFBD0400081B5B /* EventAnnotation.swift */; };
+		C3E1EE6D1EC92ACE001E8996 /* DatabaseEventListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B24221EB162ED00450AD3 /* DatabaseEventListModel.swift */; };
+		DA2C8E6E1EC9189100BCD978 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C8E6D1EC9189100BCD978 /* SettingsViewController.swift */; };
 		DA2C8E721EC93B8600BCD978 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C8E711EC93B8600BCD978 /* HomeViewController.swift */; };
 		DA4398631EC95526008E46EC /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4398621EC95526008E46EC /* HomeNavigationViewController.swift */; };
-		DA2C8E6E1EC9189100BCD978 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C8E6D1EC9189100BCD978 /* SettingsViewController.swift */; };
-		C3E1EE6D1EC92ACE001E8996 /* DatabaseEventListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B24221EB162ED00450AD3 /* DatabaseEventListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -168,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				8364A9911EAE210A00050B76 /* SocialEventSJSU.entitlements */,
+				DA2C8E6D1EC9189100BCD978 /* SettingsViewController.swift */,
 				83AD7CEC1EAE076500FDA83C /* AppDelegate.swift */,
 				DA2C8E711EC93B8600BCD978 /* HomeViewController.swift */,
 				83AD7CEE1EAE076500FDA83C /* ViewController.swift */,
@@ -175,7 +176,6 @@
 				C3A1E51A1EB00356006D024A /* SignViewController.swift */,
 				83AD7CF01EAE076500FDA83C /* Main.storyboard */,
 				DA4398621EC95526008E46EC /* HomeNavigationViewController.swift */,
-				DA2C8E6D1EC9189100BCD978 /* SettingsViewController.swift */,
 				7713E7101EC41787009FCA24 /* FormViewController.swift */,
 				C3A1E5171EAFFE6C006D024A /* EventListViewController.swift */,
 				C3B898B91EAFBD0400081B5B /* EventAnnotation.swift */,
@@ -385,7 +385,6 @@
 				7713E7111EC41787009FCA24 /* FormViewController.swift in Sources */,
 				C3B898BA1EAFBD0400081B5B /* EventAnnotation.swift in Sources */,
 				C3E1EE6D1EC92ACE001E8996 /* DatabaseEventListModel.swift in Sources */,
-				C399FE101EC287C7007EFD7B /* HomeViewController.swift in Sources */,
 				C3B898B81EAF397000081B5B /* MapViewController.swift in Sources */,
 				DA2C8E6E1EC9189100BCD978 /* SettingsViewController.swift in Sources */,
 				83AD7CED1EAE076500FDA83C /* AppDelegate.swift in Sources */,

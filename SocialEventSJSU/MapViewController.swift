@@ -150,7 +150,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
             }))
             
-            refreshAlert.addAction(UIAlertAction(title: "Choose another event", style: .cancel, handler: { (action: UIAlertAction!) in
+            refreshAlert.addAction(UIAlertAction(title: "Skip event", style: .cancel, handler: { (action: UIAlertAction!) in
                 print("Handle Cancel Logic here")
             }))
             
