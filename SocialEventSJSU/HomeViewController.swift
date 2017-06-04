@@ -16,6 +16,8 @@ class HomeViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var search: UISearchBar!
+    
     
     
     

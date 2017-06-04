@@ -46,12 +46,8 @@ class EventListViewController: UITableViewController {
         cell.detailTextLabel?.text = eventLocation
         
         // Configure the cell...
-
+     
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "List of Events in SJSU"
     }
     
 
