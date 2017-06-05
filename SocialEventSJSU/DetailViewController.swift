@@ -22,6 +22,13 @@ class DetailViewController: UIViewController {
     }
     
 
+    override func willMove(toParentViewController parent: UIViewController?){
+        super.willMove(toParentViewController: parent)
+        if parent == nil {
+            self.tabBarController?.tabBar.isHidden = false
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
